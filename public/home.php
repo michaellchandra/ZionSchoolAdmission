@@ -20,6 +20,15 @@
             width: fit-content;
         }
 
+        .container3 {
+            display: flex;
+            align-items: center;
+        }
+
+        .p1 {
+            margin-right: 10px;
+        }
+
         .btn {
             display: inline-block;
             padding: 10px 20px;
@@ -41,9 +50,21 @@
             transform: scale(1.1);
             color: white;
         }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
     </style>
 
-<script>
+    <script>
         function generateRandomNumber() {
             // Generate a random 12-digit number
             var randomNumber = Math.floor(Math.random() * 900000000000) + 100000000000;
@@ -56,6 +77,31 @@
         window.addEventListener('load', function() {
             generateRandomNumber();
         });
+
+        function generateRandomPassword() {
+            // Define characters for password generation
+            var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+=-';
+
+            // Define password length
+            var passwordLength = 12;
+
+            // Initialize an empty password string
+            var password = '';
+
+            // Generate random characters to form the password
+            for (var i = 0; i < passwordLength; i++) {
+                var randomIndex = Math.floor(Math.random() * characters.length);
+                password += characters.charAt(randomIndex);
+            }
+
+            // Update the password in the HTML element
+            document.getElementById("randomPassword").textContent = password;
+        }
+
+        // Generate a random password when the page loads
+        window.addEventListener('load', function() {
+            generateRandomPassword();
+        });
     </script>
 
 </head>
@@ -64,8 +110,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">My Website</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -87,6 +132,8 @@
         </div>
     </nav>
 
+
+    <!-- Nomor Formulir -->
     <div class="container1 mt-4">
         <h1>Nomor Formulir Anda</h1>
     </div>
@@ -95,6 +142,16 @@
         <h1 id="randomNumber"></h1>
     </div>
 
+    <!-- Auto Password -->
+    <div class="container2 mt-4">
+        <div class="container3">
+            <p>Password Anda: </p>
+            <p> &nbsp; </p>
+            <p id="randomPassword"></p>
+        </div>
+    </div>
+
+    <!-- Button Isi Biodata -->
     <div class="container2 mt-4">
         <a href="http://127.0.0.1:8000/isiBiodata.php" class="btn">Isi Biodata</a>
     </div>
