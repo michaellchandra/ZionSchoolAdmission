@@ -36,8 +36,8 @@
             font-weight: bold;
             text-align: center;
             text-decoration: none;
-            background-color: white;
-            color: black;
+            background-color: #45a049;
+            color: white;
             border: none;
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -45,7 +45,7 @@
         }
 
         .btn:hover {
-            background-color: #45a049;
+            background-color: #70c174;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             transform: scale(1.1);
             color: white;
