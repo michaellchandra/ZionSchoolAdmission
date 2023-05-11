@@ -42,6 +42,22 @@
             color: white;
         }
     </style>
+
+<script>
+        function generateRandomNumber() {
+            // Generate a random 12-digit number
+            var randomNumber = Math.floor(Math.random() * 900000000000) + 100000000000;
+
+            // Update the number in the HTML element
+            document.getElementById("randomNumber").textContent = randomNumber;
+        }
+
+        // Generate a random number when the page loads
+        window.addEventListener('load', function() {
+            generateRandomNumber();
+        });
+    </script>
+
 </head>
 
 <body>
@@ -72,16 +88,16 @@
     </nav>
 
     <div class="container1 mt-4">
-        <h1>Nomor Formulir Anda: 026961675032</h1>
+        <h1>Nomor Formulir Anda</h1>
+    </div>
+
+    <div class="container2 mt-4">
+        <h1 id="randomNumber"></h1>
     </div>
 
     <div class="container2 mt-4">
         <a href="http://127.0.0.1:8000/isiBiodata.php" class="btn">Isi Biodata</a>
     </div>
-
-
-
-
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
