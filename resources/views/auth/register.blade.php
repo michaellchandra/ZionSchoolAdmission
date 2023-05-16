@@ -2,18 +2,39 @@
     <form method="POST" action="{{ route('register') }}">
         @csrf
 
-        <!-- Name -->
+        <!-- Nama lengkap orang tua -->
         <div>
-            <x-input-label for="name" :value="__('Name')" />
+            <x-input-label for="nameortu" :value="__('Nama Lengkap Orang Tua')" />
+            <x-text-input id="nameortu" class="block mt-1 w-full" type="text" name="nameortu" :value="old('nameortu')" required autofocus autocomplete="name" />
+            <x-input-error :messages="$errors->get('name')" class="mt-2" />
+        </div>
+
+        <!-- Nama Calon Siswa-->
+        <div class="mt-4">
+            <x-input-label for="name" :value="__('Nama Calon Siswa')" />
             <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
             <x-input-error :messages="$errors->get('name')" class="mt-2" />
         </div>
 
+         <!-- Tanggal Lahir -->
+         <div class="mt-4">
+            <x-input-label for="birthday" :value="__('Tangaal Lahir Calon Siswa')" />
+            <x-text-input id="birthday" class="block mt-1 w-full" type="date" name="birthday" :value="old('birthday')" required autofocus autocomplete="birthday" />
+            <x-input-error :messages="$errors->get('birthday')" class="mt-2" />
+        </div>
+
         <!-- Email Address -->
         <div class="mt-4">
-            <x-input-label for="email" :value="__('Email')" />
+            <x-input-label for="email" :value="__('Email Aktif')" />
             <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
+        </div>
+
+        <!-- Nomor Telefon -->
+        <div class="mt-4">
+            <x-input-label for="phone" :value="__('Nomor Telefon')" />
+            <x-text-input id="phone" class="block mt-1 w-full" type="number" name="phone" :value="old('phone')" autocomplete="off" />
+            <x-input-error :messages="$errors->get('phone')" class="mt-2" />
         </div>
 
         <!-- Password -->
