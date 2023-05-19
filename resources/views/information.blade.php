@@ -87,7 +87,7 @@
                     Bukti pelunasan harus dibawa pada saat hari pertama bersekolah
                 </li>
             </ul>
-            <span style="text-align: right;"><b>Tata Usaha SMA : Ibu Martince, +62 821-8727-5504 </b><p></p><a href="https://wa.me/+6282187275504">Kontol<i class="bi bi-whatsapp" style="color: #76f93e;"></i></a></span>
+            <span style="text-align: right;"><b>Tata Usaha SMA : Ibu Martince, +62 821-8727-5504 </b><p></p><a href="https://wa.me/+6282187275504">Chat on WhatsApp<i class="bi bi-whatsapp" style="color: #76f93e;"></i></a></span>
         </div>
     </div>
 </body>
