@@ -24,6 +24,12 @@ class User extends Authenticatable
         'nameortu',
         'birthday',
         'phone',
+        'namaLengkap',
+        'jenisKelamin',
+        'nik',
+        'anakKeBerapa',
+        'jumlahSaudaraKandung',
+        'jumlahSaudaraTiri'
     ];
 
     /**

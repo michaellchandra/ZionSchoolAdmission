@@ -21,6 +21,15 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/kontak', function () {
+    return view('kontak');
+})->middleware(['auth', 'verified'])->name('kontak');
+Route::get('/informasi', function () {
+    return view('informasi');
+})->middleware(['auth', 'verified'])->name('informasi');
+Route::get('/isiDataDiri', function () {
+    return view('isiDataDiri');
+})->middleware(['auth', 'verified'])->name('isiDataDiri');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
