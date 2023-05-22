@@ -25,10 +25,10 @@ return new class extends Migration
             $table->string('namaLengkap');
             $table->string('jenisKelamin');
             $table->string('nik');
-            $table->int('anakKeBerapa');
-            $table->int('jumlahSaudaraKandung');
-            $table->int('jumlahSaudaraTiri');
-            $table->int('tinggi');
+            $table->integer('anakKeBerapa');
+            $table->integer('jumlahSaudaraKandung');
+            $table->integer('jumlahSaudaraTiri');
+            $table->integer('tinggi');
             $table->string('alamatSiswa');
             $table->string('jenisTinggal');
             $table->string('transportasiSekolah');
