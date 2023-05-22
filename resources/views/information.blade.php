@@ -7,22 +7,33 @@
     <title>Zion School Admission </title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <style>
-        .luar {
-            width: 80%;
-            height: 70%;
-            box-shadow: 4px;
-            border-color: black;
-        }
-    </style>
+    <link rel="canonical" href="https://icons.getbootstrap.com/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 
 <body>
     <div style='padding-top:80px;margin-left:80px;'>
-        <h1>Selamat Datang !</h1>
-        <h3> Nomor Formulir : <?php 'No Form'; ?> </h3>
+        <h4><b>Selamat Datang !</b></h4>
+        <h5>Email</h5>
     </div>
-    <div style="margin-left:80px; padding:20px; border:black solid 1px; width:80%; height:80%; display:center;">
+    <div >
+        <div style="margin-left:80px;padding:30px;background-color:#D43333;width:92%; height:80%; display:center;color:white; border-top-right-radius: 12px;  border-top-left-radius: 12px;" >
+        <h4 style="padding:15px;">Pembayaran Formulir</h4>
+        </div>
+        <div div style="margin-left:80px;padding:50px;background-color:#FF4B4B;width:92%; height:80%; display:center;color:white; border-bottom-right-radius: 12px;  border-bottom-left-radius: 12px;" >
+        <h6>Biaya Pendaftaran</h6>
+        <h4>Rp. 123.456,-</h4>
+        <p>Silahkan Melakukan Transfer ke</p>
+        <b>BCA 025 387 899 a/n YAYASAN BUKIT ZION GKKAUP</b>
+        <p>Sesuai dengan Nominal tertera untuk memudahkan kami melakukan pengecekan, kemudian lakukan konfirmasi bukti pwmbayaran melalui WhatsApp pada tombol dibawah ini. Jangan Lupa Untuk <b>Melakukan ScreenShot</b> sebagai dokumentasi jika terjadi kesalahan sistem.</p>
+        <a href="https://wa.me/+6282187275504"><button class="btn btn-success" style="border-radius:25px; width:100%; display:flex; justify-content:center; align-items:center;"><i class="bi bi-whatsapp" style="color: white; font-size: 24px;"></i><b>&nbspVerifikasi Pembayaran via WhatsApp</b></button></a>
+    </div>
+    </div>
+    <br>
+    <br>
+    <div style="margin-left:80px; padding:20px; border:black solid 1px; width:92%; height:80%; display:center;">
         <h4>Informasi Pendaftaran </h4>
         <h5>I. PROSEDUR PENDAFTARAN SISWA BARU ASAL SMP ZION</h5>
         <h6 style="margin-left:17px;">Tahun Pelajaran 2023 - 2024 </h6>
@@ -87,7 +98,7 @@
                     Bukti pelunasan harus dibawa pada saat hari pertama bersekolah
                 </li>
             </ul>
-            <span style="text-align: right;"><b>Tata Usaha SMA : Ibu Martince, +62 821-8727-5504 </b><p></p><a href="https://wa.me/+6282187275504">Chat on WhatsApp<i class="bi bi-whatsapp" style="color: #76f93e;"></i></a></span>
+            <span style="text-align: right;"><b>Tata Usaha SMA : Ibu Martince, +62 821-8727-5504 </b><p></p><a href="https://wa.me/+6282187275504"><i class="bi bi-whatsapp" style="color: #76f93e; font-size: 32px;"></i> Chat WhatsApp</a></span>
         </div>
     </div>
 </body>
