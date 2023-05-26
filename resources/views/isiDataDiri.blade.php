@@ -2,7 +2,7 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <h1 class="text-white text-4xl font-black"> Selamat Datang! </h1>
-            <h1 class="text-white text-2xl">{{ Auth::user()->email }} </h1>
+            <h1 class="text-white text-2xl">{{ Auth::user()->name }} </h1>
             <br>
 
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
@@ -24,7 +24,29 @@
                         </div>
 
                         <!-- Jenis kelamin -->
-                        <div class= "flex justify-between items-center gap-3 mt-4">
+
+                        <div class="flex justify-between items-center gap-3 mt-4">
+                            <div class="w-1/6">
+                            <x-input-label for="jenisKelamin" :value="__('Jenis Kelamin')" />
+                            </div>
+                            <div class="w-5/6">
+                        <div>
+                                <label for="jenisKelamin-pria" class="inline-flex items-center">
+                                <input id="jenisKelamin-pria" class="form-radio" type="radio" name="jenisKelamin" value="pria" required autofocus>
+                            <span class="ml-2">Pria</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label for="jenisKelamin-wanita" class="inline-flex items-center">
+                                <input id="jenisKelamin-wanita" class="form-radio" type="radio" name="jenisKelamin" value="wanita" required>
+                                <span class="ml-2">Wanita</span>
+                                </label>
+                            </div>
+                            <x-input-error :messages="$errors->get('jenisKelamin')" class="mt-2" />
+                            </div>
+                        </div>
+
+                        {{-- <div class= "flex justify-between items-center gap-3 mt-4">
                             <div class="w-1/6">
                                 <x-input-label for="jenisKelamin" :value="__('Jenis Kelamin')" />
                             </div>
@@ -33,7 +55,7 @@
                                 :value="old('jenisKelamin')" required autofocus autocomplete="jenisKelamin" />
                                 <x-input-error :messages="$errors->get('jenisKelamin')" class="mt-2" />
                             </div>
-                        </div>
+                        </div> --}}
 
                         <!-- Nomor Induk Kependudukan -->
                         <div class= "flex justify-between items-center gap-3 mt-4">
@@ -144,7 +166,24 @@
                         </div>
 
                         <!-- Jenis Tinggal -->
-                        <div class= "flex justify-between items-center gap-3 mt-4">
+
+                        <div class="flex justify-between items-center gap-3 mt-4">
+                            <div class="w-1/6">
+                            <x-input-label for="jenisTinggal" :value="__('Jenis Tinggal')" />
+                            </div>
+                            <div class="w-5/6">
+                                <select id="jenisTinggal" name="jenisTinggal" class="form-select block w-full mt-4 text-lg font-regular text-white bg-blue-900" required autofocus>
+                                <option value="">Select an option</option>
+                                <option value="orangtua">Bersama Orang Tau</option>
+                                <option value="wali">Wali</option>
+                                <option value="kost">Kost</option>
+                                <option value="asrama">Asrama</option>
+                            </select>
+                            <x-input-error :messages="$errors->get('jenisTinggal')" class="mt-2" />
+                            </div>
+                        </div>
+
+                        {{-- <div class= "flex justify-between items-center gap-3 mt-4">
                             <div class="w-1/6">
                                 <x-input-label for="jenisTinggal" :value="__('Jenis Tinggal')" />
                             </div>
@@ -153,10 +192,29 @@
                                 :value="old('jenisTinggal')" required autofocus autocomplete="jenisTinggal" />
                                 <x-input-error :messages="$errors->get('jenisTinggal')" class="mt-2" />
                             </div>
-                        </div>
+                        </div> --}}
 
                         <!-- Alat Transportasi Ke Sekolah -->
-                        <div class= "flex justify-between items-center gap-3 mt-4">
+                        <div class="flex justify-between items-center gap-3 mt-4">
+                            <div class="w-1/6">
+                            <x-input-label for="alatTransportasiKeSekolah" :value="__('Alat Transportasi ke Sekolah')" />
+                            </div>
+                            <div class="w-5/6">
+                                <select id="alatTransportasiKeSekolah" name="alatTransportasiKeSekolah" class="form-select block w-full mt-4 text-lg font-regular text-white bg-blue-900" required autofocus>
+                                <option value="">Select an option</option>
+                                <option value="kaki">Jalan Kaki</option>
+                                <option value="mobil">Mobil Pribadi</option>
+                                <option value="kendaran_umum">Kendaran Umum</option>
+                                <option value="jemputan_sekolah">Jemputan Sekolah</option>
+                                <option value="sepeda_motor">Sepeda Motor</option>
+                                <option value="sepeda">Sepeda</option>
+                                <option value="lainnya">Lainnya</option>
+                            </select>
+                            <x-input-error :messages="$errors->get('alatTransportasiKeSekolah')" class="mt-2" />
+                            </div>
+                        </div>
+
+                        {{-- <div class= "flex justify-between items-center gap-3 mt-4">
                             <div class="w-1/6">
                                 <x-input-label for="alatTransportasiKeSekolah" :value="__('Alat Transportasi ke Sekolah')" />
                             </div>
@@ -165,10 +223,31 @@
                                 :value="old('alatTransportasiKeSekolah')" required autofocus autocomplete="alatTransportasiKeSekolah" />
                                 <x-input-error :messages="$errors->get('alatTransportasiKeSekolah')" class="mt-2" />
                             </div>
-                        </div>
+                        </div> --}}
 
                         <!-- Agama Siswa -->
-                        <div class= "flex justify-between items-center gap-3 mt-4">
+
+                        <div class="flex justify-between items-center gap-3 mt-4">
+                            <div class="w-1/6">
+                            <x-input-label for="agamaSiswa" :value="__('Agama Siswa')" />
+                            </div>
+                            <div class="w-5/6">
+                                <select id="agamaSiswa" name="agamaSiswa" class="form-select block w-full mt-4 text-lg font-regular text-blue-600" required autofocus>
+                                <option value="">Pilih Agama</option>
+                                <option value="kristen">Kristen</option>
+                                <option value="katolik">Katolik</option>
+                                <option value="islam">Islam</option>
+                                <option value="hindu">Hindu</option>
+                                <option value="buddha">Buddha</option>
+                                <option value="konghuchu">Konghuchu</option>
+                                <option value="agama_lainnya">Lainnya</option>
+                            </select>
+                            <x-input-error :messages="$errors->get('agamaSiswa')" class="mt-2" />
+                            </div>
+                        </div>
+
+
+                        {{-- <div class= "flex justify-between items-center gap-3 mt-4">
                             <div class="w-1/6">
                                 <x-input-label for="agamaSiswa" :value="__('Agama Siswa')" />
                             </div>
@@ -177,7 +256,7 @@
                                 :value="old('agamaSiswa')" required autofocus autocomplete="agamaSiswa" />
                                 <x-input-error :messages="$errors->get('agamaSiswa')" class="mt-2" />
                             </div>
-                        </div>
+                        </div> --}}
 
                         <!-- Nomor Telepon / Handphone (WhatsApp) -->
                         <div class= "flex justify-between items-center gap-3 mt-4">
