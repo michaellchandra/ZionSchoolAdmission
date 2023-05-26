@@ -22,20 +22,20 @@ return new class extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
-            $table->string('namaLengkap');
-            $table->string('jenisKelamin');
-            $table->string('nik');
-            $table->integer('anakKeBerapa');
-            $table->integer('jumlahSaudaraKandung');
-            $table->integer('jumlahSaudaraTiri');
-            $table->integer('tinggi');
-            $table->string('alamatSiswa');
-            $table->string('jenisTinggal');
-            $table->string('transportasiSekolah');
-            $table->string('Agama');
-            $table->string('nomorWA');
-            $table->string('asalSekolah');
-            $table->string('alamat');
+            // $table->string('namaLengkap');
+            // $table->string('jenisKelamin');
+            // $table->string('nik');
+            // $table->integer('anakKeBerapa');
+            // $table->integer('jumlahSaudaraKandung');
+            // $table->integer('jumlahSaudaraTiri');
+            // $table->integer('tinggi');
+            // $table->string('alamatSiswa');
+            // $table->string('jenisTinggal');
+            // $table->string('transportasiSekolah');
+            // $table->string('Agama');
+            // $table->string('nomorWA');
+            // $table->string('asalSekolah');
+            // $table->string('alamat');
         });
     }
 
