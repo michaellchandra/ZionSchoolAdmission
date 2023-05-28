@@ -15,8 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('dashboardadmin');
+})->middleware(['auth', 'verified'])->name('dashboardadmin');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -31,10 +31,16 @@ Route::get('/isiDataDiri', function () {
     return view('isiDataDiri');
 })->middleware(['auth', 'verified'])->name('isiDataDiri');
 
+
+
 Route::middleware('auth')->group(function () {
+    // Route::get('/home', [HomeController::class, 'index'])->name('home') ;
+
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+
 
 require __DIR__.'/auth.php';
