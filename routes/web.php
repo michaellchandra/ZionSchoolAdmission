@@ -33,6 +33,12 @@ Route::get('/isiDataDiri', function () {
 Route::get('/admin', function () {
     return view('dashboardadmin');
 })->middleware(['auth', 'verified'])->name('dashboardadmin');
+Route::get('/pembayaranFormulir', function () {
+    return view('pembayaranFormulir');
+})->middleware(['auth', 'verified'])->name('pembayaranFormulir');
+Route::get('/dataPendaftar', function () {
+    return view('dataPendaftar');
+})->middleware(['auth', 'verified'])->name('dataPendaftar');
 
 
 

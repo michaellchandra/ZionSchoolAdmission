@@ -1,53 +1,12 @@
 <x-admin-layout>
-    <br><h1 class="text-black text-4xl font-black"> Pembayaran Formulir </h1>
+    <x-slot name="header">
 
-    <br><br>
-    <table>
-        <thead>
-            <tr>
-                <th>No.</th>
-                <th>Nama Calon Siswa</th>
-                <th>Email</th>
-                <th>Nama Orang Tua</th>
-                <th>Bukti Pembayaran</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Michael Chandra</td>
-                <td>michaelchandra@gmail.com</td>
-                <td>Chandra</td>
-                <td>bukti.pdf</td>
-                <td>
-                    <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
-                        Approve
-                    </button>
-                </td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Michael Wijaya</td>
-                <td>michaelwijaya@gmail.com</td>
-                <td>Wijaya</td>
-                <td>bukti.pdf</td>
-                <td>
-                    <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
-                        Approve
-                    </button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    {{-- <x-slot name="header">
+    </x-slot>
 
-    </x-slot> --}}
+    <h1 class="w-full text-3xl text-black pb-6">Forms</h1>
 
-    {{-- <h1 class="w-full text-3xl text-black pb-6">Forms</h1> --}}
-
-    {{-- <div class="flex flex-wrap"> --}}
-    {{-- <div class="w-full lg:w-1/2 my-6 pr-0 lg:pr-2">
+    <div class="flex flex-wrap">
+    <div class="w-full lg:w-1/2 my-6 pr-0 lg:pr-2">
             <p class="text-xl pb-6 flex items-center">
                 <i class="fas fa-list mr-3"></i> Contact Form
             </p>
@@ -74,9 +33,9 @@
                     </div>
                 </form>
             </div>
-        </div> --}}
+        </div>
 
-    {{-- <div class="w-full lg:w-1/2 mt-6 pl-0 lg:pl-2">
+    <div class="w-full lg:w-1/2 mt-6 pl-0 lg:pl-2">
             <p class="text-xl pb-6 flex items-center">
                 <i class="fas fa-list mr-3"></i> Checkout Form
             </p>
@@ -130,6 +89,6 @@
                 Source: <a class="underline"
                     href="https://tailwindcomponents.com/component/checkout-form">https://tailwindcomponents.com/component/checkout-form</a>
             </p>
-        </div> --}}
-    {{-- </div> --}}
+        </div>
+    </div>
 </x-admin-layout>
