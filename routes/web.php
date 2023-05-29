@@ -15,8 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('dashboardadmin');
-})->middleware(['auth', 'verified'])->name('dashboardadmin');
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -30,6 +30,9 @@ Route::get('/informasi', function () {
 Route::get('/isiDataDiri', function () {
     return view('isiDataDiri');
 })->middleware(['auth', 'verified'])->name('isiDataDiri');
+Route::get('/admin', function () {
+    return view('dashboardadmin');
+})->middleware(['auth', 'verified'])->name('dashboardadmin');
 
 
 
