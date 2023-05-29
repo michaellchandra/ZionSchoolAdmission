@@ -19,7 +19,7 @@ Route::get('/', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('bayar');
 })->middleware(['auth', 'verified'])->name('dashboard');
 Route::get('/kontak', function () {
     return view('kontak');

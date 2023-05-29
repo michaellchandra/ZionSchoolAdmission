@@ -2,11 +2,11 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900 dark:text-gray-100">
+                <div class="p-6 text-dark dark:text-gray-100">
                   <header>
                         <title>Zion School Admission </title>
-                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
-                        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+                        {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"> --}}
+                        {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> --}}
                         <style>
                             .luar {
                                 width: 80%;
@@ -86,7 +86,7 @@
                                 Bukti pelunasan harus dibawa pada saat hari pertama bersekolah
                             </li>
                         </ul>
-                        <span style="text-align: right;"><b>Tata Usaha SMA : Ibu Martince, +62 821-8727-5504 </b><p></p><a href="https://wa.me/+6282187275504">Kontol<i class="bi bi-whatsapp" style="color: #76f93e;"></i></a></span>
+                        <span style="text-align: right;"><b>Tata Usaha SMA : Ibu Martince, +62 821-8727-5504 </b><p></p><a href="https://wa.me/+6282187275504">Chat WA<i class="bi bi-whatsapp" style="color: #76f93e;"></i></a></span>
                     </div>
                 </div>
                 </div>
