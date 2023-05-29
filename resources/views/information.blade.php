@@ -13,11 +13,12 @@
 
 </head>
 
-<body>
+<body> 
     <div style='padding-top:80px;margin-left:80px;'>
         <h4><b>Selamat Datang !</b></h4>
         <h5>Email</h5>
     </div>
+    {{-- <?php if()?>
     <div >
         <div style="margin-left:80px;padding:30px;background-color:#D43333;width:92%; height:80%; display:center;color:white; border-top-right-radius: 12px;  border-top-left-radius: 12px;" >
         <h4 style="padding:15px;">Pembayaran Formulir</h4>
@@ -29,8 +30,22 @@
         <b>BCA 025 387 899 a/n YAYASAN BUKIT ZION GKKAUP</b>
         <p>Sesuai dengan Nominal tertera untuk memudahkan kami melakukan pengecekan, kemudian lakukan konfirmasi bukti pwmbayaran melalui WhatsApp pada tombol dibawah ini. Jangan Lupa Untuk <b>Melakukan ScreenShot</b> sebagai dokumentasi jika terjadi kesalahan sistem.</p>
         <a href="https://wa.me/+6282187275504"><button class="btn btn-success" style="border-radius:25px; width:100%; display:flex; justify-content:center; align-items:center;"><i class="bi bi-whatsapp" style="color: white; font-size: 24px;"></i><b>&nbspVerifikasi Pembayaran via WhatsApp</b></button></a>
+        </div>
     </div>
+    <?php else: ?> --}}
+        <div >
+        <div style="margin-left:80px;padding:30px;background-color:#459355;width:92%; height:80%; display:center;color:white; border-top-right-radius: 12px;  border-top-left-radius: 12px;" >
+        <h4 style="padding:15px;">Pembayaran Formulir Terkonfirmasi</h4>
+        </div>
+        <div div style="margin-left:80px;padding:50px;background-color:#57B56A;width:92%; height:80%; display:center;color:white; border-bottom-right-radius: 12px;  border-bottom-left-radius: 12px;" >
+        <h6>Terima kasih telah melakukan pembayaran formulir <b>Penerimaan Peserta Didik Baru SMA Zion Makassar Tahun Ajaran 2024 - 2025</b></h6>
+        <p>Anda dapat segera melakukan pendaftaran hingga selesai, apabila membutuhkan bantuan anda dapat menghubungi Tata Usaha kami menggunakan Tombol WhatsApp dibawah.</p>
+        <br>
+        <h5>Terima Kasih.</h5>
+        <a href="https://wa.me/+6282187275504" ><button class="btn btn-success" style="border-radius:25px; width:20%; margin-left:80%; display:flex-end; justify-content:flex-end; align-items:flex-end;"><i class="bi bi-whatsapp" style="color: white; font-size: 24px;"></i><b>&nbspContact Support</b></button></a>
+        </div>
     </div>
+    {{-- <?php endif; ?> --}}
     <br>
     <br>
     <div style="margin-left:80px; padding:20px; border:black solid 1px; width:92%; height:80%; display:center;">
