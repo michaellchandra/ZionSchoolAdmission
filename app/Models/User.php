@@ -26,11 +26,15 @@ class User extends Authenticatable
         'phone',
         'namaLengkap',
         'jenisKelamin',
-        'nik',
+        'nomorIndukKependudukan',
         'anakKeBerapa',
         'jumlahSaudaraKandung',
         'jumlahSaudaraTiri'
     ];
+
+    public function biodata(){
+        return $this->hasMany(biodata::class);
+    }
 
     /**
      * The attributes that should be hidden for serialization.

@@ -15,13 +15,17 @@ return new class extends Migration
            
             //Biodata Register
             $table->id();
+            $table->unsignedBigInteger('userID');
+            $table->foreign('userID')->references('id')->on('users')
+            ->onUpdate('cascade')
+            ->onDelete('cascade');
             $table->string('namaLengkap');
             $table->string('jenisKelamin');
             $table->string('alamatSiswa');
             $table->string('jenisTinggal');
             $table->string('tempatLahir');
             $table->date('birthday');
-            $table->date('nomorIndukKependudukan');
+            $table->float('nomorIndukKependudukan');
             $table->integer('anakKeBerapa');
             $table->integer('jumlahSaudaraKandung');
             $table->integer('jumlahSaudaraTiriAngkat');
@@ -45,7 +49,7 @@ return new class extends Migration
             $table->string('penghasilanBulananAyah');
             $table->float('nomorTeleponHandphoneWhatsappAyah');
             //Biodata Wali
-            $table->string('namaWali');
+            $table->string('namaWali')->nullable();
             $table->string('pekerjaanWali');
             $table->string('penghasilanBulananWali');
             $table->float('nomorTeleponHandphoneWhatsappWali');
@@ -62,8 +66,6 @@ return new class extends Migration
             $table->string('suratRanking');
             $table->string('sertifLomba');
             $table->timestamps();
-
-
         });
     }
 
