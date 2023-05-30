@@ -18,7 +18,7 @@
         <h4><b>Selamat Datang !</b></h4>
         <h5>Email</h5>
     </div>
-    {{-- <?php if()?>
+    {{-- <?php if(isAprrove == false)?>
     <div class="text-white">
         <div style="margin-left:80px;padding:30px;background-color:#D43333;width:92%; height:80%; display:center;color:white; border-top-right-radius: 12px;  border-top-left-radius: 12px;" >
         <h4 style="padding:15px;">Pembayaran Formulir</h4>
