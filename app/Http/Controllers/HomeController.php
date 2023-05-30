@@ -11,6 +11,6 @@ use Illuminate\View\View;
 class HomeController extends Controller
 {
     function index(){
-        return view('dashboard');
+        return view('informasi');
     }
 }
