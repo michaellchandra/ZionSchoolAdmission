@@ -19,7 +19,7 @@
         <h5>Email</h5>
     </div>
     {{-- <?php if()?>
-    <div >
+    <div class="text-white">
         <div style="margin-left:80px;padding:30px;background-color:#D43333;width:92%; height:80%; display:center;color:white; border-top-right-radius: 12px;  border-top-left-radius: 12px;" >
         <h4 style="padding:15px;">Pembayaran Formulir</h4>
         </div>
@@ -33,7 +33,7 @@
         </div>
     </div>
     <?php else: ?> --}}
-        <div >
+        <div class="text-white">
         <div style="margin-left:80px;padding:30px;background-color:#459355;width:92%; height:80%; display:center;color:white; border-top-right-radius: 12px;  border-top-left-radius: 12px;" >
         <h4 style="padding:15px;">Pembayaran Formulir Terkonfirmasi</h4>
         </div>
