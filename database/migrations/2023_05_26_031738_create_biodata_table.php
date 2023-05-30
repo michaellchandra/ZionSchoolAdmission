@@ -12,22 +12,58 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('biodata', function (Blueprint $table) {
+           
+            //Biodata Register
             $table->id();
             $table->string('namaLengkap');
             $table->string('jenisKelamin');
-            $table->string('nik');
-            $table->integer('anakKeBerapa');
-            $table->integer('jumlahSaudaraKandung');
-            $table->integer('jumlahSaudaraTiri');
-            $table->integer('tinggi');
             $table->string('alamatSiswa');
             $table->string('jenisTinggal');
-            $table->string('transportasiSekolah');
-            $table->string('Agama');
-            $table->string('nomorWA');
-            $table->string('asalSekolah');
-            $table->string('alamat');
+            $table->string('tempatLahir');
+            $table->date('birthday');
+            $table->date('nomorIndukKependudukan');
+            $table->integer('anakKeBerapa');
+            $table->integer('jumlahSaudaraKandung');
+            $table->integer('jumlahSaudaraTiriAngkat');
+            $table->integer('tinggiBadan');
+            $table->string('alatTransportasiKeSekolah');
+            $table->string('agamaSiswa');
+            $table->float('nomorTeleponHandphoneWhatsapp');
+            $table->string('namaSekolahAsal');
+            $table->string('alamatSekolahAsal');
+            $table->string('provinsiSekolahAsal');
+            $table->string('kabupatenKotaSekolahAsal');
+            $table->string('kecamatanSekolahAsal');
+            //Biodata Ibu Kandung
+            $table->string('namaIbuKandung');
+            $table->string('pekerjaanIbu');
+            $table->string('penghasilanBulananIbu');
+            $table->integer('nomorTeleponHandphoneWhatsappIbu');
+            //Biodata Ayah Kandung
+            $table->string('namaAyahKandung');
+            $table->string('pekerjaanAyah');
+            $table->string('penghasilanBulananAyah');
+            $table->float('nomorTeleponHandphoneWhatsappAyah');
+            //Biodata Wali
+            $table->string('namaWali');
+            $table->string('pekerjaanWali');
+            $table->string('penghasilanBulananWali');
+            $table->float('nomorTeleponHandphoneWhatsappWali');
+
+            //Lampiran Dokumen Pribadi(Dalama bentuk Foto)
+            $table->string('aktaKelahiran');
+            $table->string('kartuKeluarga');
+            $table->string('ktpAyahKandung');
+            $table->string('ktpIbuKandung');
+            $table->string('ktpWali');
+            $table->string('kartuAnggota');
+            //Lampiran Dokumen Administrasi(Dalam bentuk Foto)
+            $table->string('scanRaportVIII');
+            $table->string('suratRanking');
+            $table->string('sertifLomba');
             $table->timestamps();
+
+
         });
     }
 
