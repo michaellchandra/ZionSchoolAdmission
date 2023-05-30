@@ -9,6 +9,8 @@ class biodata extends Model
 {
     use HasFactory;
 
+    protected $table = 'biodata';
+
     protected $guarded = [
         'id'
     ];

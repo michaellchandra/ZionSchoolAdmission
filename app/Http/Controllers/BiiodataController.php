@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\biodata;
 
 class BiiodataController extends Controller
 {
     //save data from form
-    public function create(Request $REQUEST)
+    public function create(Request $request)
     {
         //validasi foto
         $this->validate($request, [
@@ -75,13 +76,13 @@ class BiiodataController extends Controller
         //Dokumen Foto
             'aktaKelahiran' => $aktaKelahiran_path,
             'kartuKeluarga' => $kartuKeluarga_path,
-            'ktpAyahKandung' => $request->ktpAyahKandung_patjh,
-            'ktpIbuKandung' => $request->ktpIbuKandung_path,
-            'ktpWali' => $request->ktpWali_path,
-            'kartuAnggota' => $request->kartuAnggota_path,
-            'scanRaportVIII' => $request->scanRaportVIII_path,
-            'suratRanking' => $request->suratRanking_path,
-            'sertifLomba' => $request->sertifLomba_path,
+            'ktpAyahKandung' => $ktpAyahKandung_path,
+            'ktpIbuKandung' => $ktpIbuKandung_path,
+            'ktpWali' => $ktpWali_path,
+            'kartuAnggota' => $kartuAnggota_path,
+            'scanRaportVIII' => $scanRaportVIII_path,
+            'suratRanking' => $suratRanking_path,
+            'sertifLomba' => $sertifLomba_path,
         ]);
 
 

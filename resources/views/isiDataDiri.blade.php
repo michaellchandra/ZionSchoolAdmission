@@ -7,7 +7,7 @@
 
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
-                    <form method="POST" action="{{ route('isiDataDiri') }}">
+                    <form method="POST" action="{{ route('biodata.create') }}" enctype="multipart/form-data">
                         @csrf
                         <h1 class="font-black text-2xl">I. Biodata Calon Siswa</h1>
                         <br>
@@ -17,7 +17,7 @@
                                 <x-input-label for="name" :value="__('Nama Calon Siswa')" />
                             </div>
                             <div class="w-5/6">
-                                <x-text-input id="name" class="block mt-1 w-full" type="text" name="name"
+                                <x-text-input id="name" class="block mt-1 w-full" type="text" name="namaLengkap"
                                     :value="old('name')" required autofocus autocomplete="name" />
                                 <x-input-error :messages="$errors->get('name')" class="mt-2" />
                             </div>

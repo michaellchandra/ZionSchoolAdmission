@@ -30,6 +30,7 @@ Route::get('/informasi', function () {
 Route::get('/isiDataDiri', function () {
     return view('isiDataDiri');
 })->middleware(['auth', 'verified'])->name('isiDataDiri');
+Route::post('/datadiricreate', [App\Http\Controllers\BiiodataController::class, 'create'])->name('biodata.create');
 Route::get('/admin', function () {
     return view('dashboardadmin');
 })->middleware(['auth', 'verified'])->name('dashboardadmin');
