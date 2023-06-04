@@ -1,5 +1,15 @@
 <x-admin-layout>
-    <br><h1 class="text-black text-4xl font-black"> Pembayaran Formulir </h1>
+    <br>
+    <h1 class="text-black text-4xl font-black"> Pembayaran Formulir </h1>
+
+    <?php
+    $data = DB::table('users')->get();
+    ?>
+
+    {{-- @foreach ($data as $item)
+        {{ $item->name }}
+    @endforeach --}}
+
 
     <br><br>
     <table>
@@ -14,7 +24,21 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
+            @foreach ($data as $item)
+                <tr>
+                    <td>{{ $item->id }}</td>
+                    <td>{{ $item->name }}</td>
+                    <td>{{ $item->email }}</td>
+                    <td>{{ $item->nameortu }}</td>
+                    <td>bukti.pdf</td>
+                    <td>
+                        <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
+                            Approve
+                        </button>
+                    </td>
+                </tr>
+            @endforeach
+            {{-- <tr>
                 <td>1</td>
                 <td>Michael Chandra</td>
                 <td>michaelchandra@gmail.com</td>
@@ -37,7 +61,7 @@
                         Approve
                     </button>
                 </td>
-            </tr>
+            </tr> --}}
         </tbody>
     </table>
 </x-admin-layout>

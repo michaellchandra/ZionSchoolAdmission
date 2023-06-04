@@ -3,7 +3,14 @@
 
     </x-slot>
 
-    <h1 class="w-full text-3xl text-black pb-6">Forms</h1>
+    <h1 class="text-black text-4xl font-black"> Dashboard </h1>
+
+    <br>
+    <p>Jumlah pendaftar saat ini : </p>
+
+
+
+    {{-- <h1 class="w-full text-3xl text-black pb-6">Forms</h1>
 
     <div class="flex flex-wrap">
     <div class="w-full lg:w-1/2 my-6 pr-0 lg:pr-2">
@@ -90,5 +97,5 @@
                     href="https://tailwindcomponents.com/component/checkout-form">https://tailwindcomponents.com/component/checkout-form</a>
             </p>
         </div>
-    </div>
+    </div> --}}
 </x-admin-layout>

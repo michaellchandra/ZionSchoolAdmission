@@ -19,32 +19,33 @@
         </div>
     </div>
     <?php else: ?> --}}
-    <div class="text-white p-2">
+    <div class="text-white">
         <div
-            style="margin-left:80px;padding:30px;background-color:#459355;width:92%; height:80%; display:center;color:white; border-top-right-radius: 12px;  border-top-left-radius: 12px;">
-            <h4 style="padding:15px;">Pembayaran Formulir Terkonfirmasi</h4>
+            style="margin-left:80px; margin-right:80px; padding-left:50px;padding-top:15px;padding-bottom:15px;background-color:#459355; height:80%; display:center;color:white; border-top-right-radius: 12px;  border-top-left-radius: 12px;">
+            <h4 class="font-black">Pembayaran Formulir Terkonfirmasi</h4>
         </div>
         <div div
-            style="margin-left:80px;padding:50px;background-color:#57B56A;width:92%; height:80%; display:center;color:white; border-bottom-right-radius: 12px;  border-bottom-left-radius: 12px;">
+            style="margin-left:80px; margin-right:80px; padding:50px;background-color:#57B56A;height:80%; display:center;color:white; border-bottom-right-radius: 12px;  border-bottom-left-radius: 12px;">
             <h6>Terima kasih telah melakukan pembayaran formulir <b>Penerimaan Peserta Didik Baru SMA Zion Makassar
                     Tahun Ajaran 2024 - 2025</b></h6>
             <p>Anda dapat segera melakukan pendaftaran hingga selesai, apabila membutuhkan bantuan anda dapat
                 menghubungi Tata Usaha kami menggunakan Tombol WhatsApp dibawah.</p>
             <br>
-            <h5>Terima Kasih.</h5>
-            <div class=" align-content-end">
+
+            <div class="flex justify-between align-content-center">
+                <h5>Terima Kasih.</h5>
                 <a href="https://wa.me/+6282187275504">
                     <x-primary-button class="ml-3">
-                        {{ __('Contact Support') }}
+                        {{ __('Contact Support (WhatsApp)') }}
                     </x-primary-button>
                 </a>
             </div>
         </div>
     </div>
     {{-- <?php endif; ?> --}}
+
     <br>
-    <br>
-    <div class="text-white border-white p-20">
+    <div class="text-white" style="margin-left:80px; margin-right:80px">
         <h4>Informasi Pendaftaran </h4>
         <h5>I. PROSEDUR PENDAFTARAN SISWA BARU ASAL SMP ZION</h5>
         <h6 style="margin-left:17px;">Tahun Pelajaran 2023 - 2024 </h6>
@@ -125,17 +126,24 @@
                     Bukti pelunasan harus dibawa pada saat hari pertama bersekolah
                 </li>
             </ul>
-            <span class="border-white" style="text-align: right;"><b>Tata Usaha SMA : Ibu Martince, +62
-                    821-8727-5504 </b>
-                <p></p>
+            <span class="border-white" style="text-align: right; ">
                 <br>
-                <a href="https://wa.me/+6282187275504">
-                    <x-primary-button class="ml-3 background-color:#57B56A  ">
-                        {{ __('Chat By WhatsApp') }}
-                    </x-primary-button>
-                </a>
+                <div class="flex justify-between align-content-center">
+                    <b>Tata Usaha SMA : Ibu Martince, +62
+                        821-8727-5504 (WA)</b>
+                        <a href="https://wa.me/+6282187275504">
+                            <x-primary-button class="ml-3 background-color:#57B56A  ">
+                                {{ __('Chat By WhatsApp') }}
+                            </x-primary-button>
+                        </a>
+                </div>
+
+
+                <br>
+
             </span>
         </div>
+        <br>
     </div>
 
 
