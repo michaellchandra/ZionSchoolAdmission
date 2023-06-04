@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('biodata', function (Blueprint $table) {
-           
+
             //Biodata Register
             $table->id();
             $table->unsignedBigInteger('userID');
@@ -25,14 +25,14 @@ return new class extends Migration
             $table->string('jenisTinggal');
             $table->string('tempatLahir');
             $table->date('birthday');
-            $table->float('nomorIndukKependudukan');
+            $table->bigInteger('nomorIndukKependudukan');
             $table->integer('anakKeBerapa');
             $table->integer('jumlahSaudaraKandung');
             $table->integer('jumlahSaudaraTiriAngkat');
             $table->integer('tinggiBadan');
             $table->string('alatTransportasiKeSekolah');
             $table->string('agamaSiswa');
-            $table->float('nomorTeleponHandphoneWhatsapp');
+            $table->bigInteger('nomorTeleponHandphoneWhatsapp');
             $table->string('namaSekolahAsal');
             $table->string('alamatSekolahAsal');
             $table->string('provinsiSekolahAsal');
@@ -42,17 +42,17 @@ return new class extends Migration
             $table->string('namaIbuKandung');
             $table->string('pekerjaanIbu');
             $table->string('penghasilanBulananIbu');
-            $table->integer('nomorTeleponHandphoneWhatsappIbu');
+            $table->bigInteger('nomorTeleponHandphoneWhatsappIbu');
             //Biodata Ayah Kandung
             $table->string('namaAyahKandung');
             $table->string('pekerjaanAyah');
             $table->string('penghasilanBulananAyah');
-            $table->float('nomorTeleponHandphoneWhatsappAyah');
+            $table->bigInteger('nomorTeleponHandphoneWhatsappAyah');
             //Biodata Wali
             $table->string('namaWali')->nullable();
-            $table->string('pekerjaanWali');
-            $table->string('penghasilanBulananWali');
-            $table->float('nomorTeleponHandphoneWhatsappWali');
+            $table->string('pekerjaanWali')->nullable();
+            $table->string('penghasilanBulananWali')->nullable();
+            $table->bigInteger('nomorTeleponHandphoneWhatsappWali')->nullable();
 
             //Lampiran Dokumen Pribadi(Dalama bentuk Foto)
             $table->string('aktaKelahiran');
