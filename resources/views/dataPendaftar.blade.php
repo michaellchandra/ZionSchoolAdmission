@@ -2,7 +2,7 @@
     <?php
     $data = DB::table('users')->get();
     $data2 = DB::table('biodata')->get();
-    $length = count($data);
+    $length = count($data2);
     ?>
 
     <br>
@@ -27,6 +27,9 @@
             </tr>
         </thead>
         <tbody>
+            @if ($length == 0)
+
+            @else
             @for ($i = 0; $i < $length; $i++)
             <tr>
                 <td>{{ $data[$i]->id }}</td>
@@ -35,23 +38,30 @@
                 <td>{{ $data[$i]->nameortu }}</td>
                 <td>{{ $data[$i]->phone }}</td>
                 <td>
-
+                    {{-- DETAILS --}}
                     <a href="{{ route('siswaDetails', ['itemId' => $i]) }}">
                         <button class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded">
                             Details
                         </button>
                     </a>
-
+                    {{-- EDIT --}}
                     <button class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded">
                         Edit
                     </button>
+                    {{-- DELETE --}}
+                    <form action="{{ route('biodata.delete', $data2[$i]->id) }}" method="POST">
+                        @csrf
+                        @method('delete')
+                        <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded" type="submit">
+                            Delete
+                        </button>
 
-                    <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
-                        Delete
-                    </button>
+                    </form>
                 </td>
             </tr>
-            @endfor
+            @endfor  
+            @endif
+            
 
             {{-- @foreach ($data as $item)
             <tr>

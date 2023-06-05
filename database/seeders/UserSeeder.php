@@ -19,17 +19,6 @@ class UserSeeder extends Seeder
     {
         DB::table('users')->insert([
             [
-                'name' => 'Admin',
-                'nameortu' => 'Admin',
-                'birthday' => '2000-01-01',
-                'phone' => '123456789',
-                'email' => 'admin@example.com',
-                'email_verified_at' => now(),
-                'password' => Hash::make('admin'),
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            [
                 'name' => 'John Doe',
                 'nameortu' => 'Jane Doe',
                 'birthday' => '2000-01-01',

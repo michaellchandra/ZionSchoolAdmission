@@ -88,4 +88,11 @@ class BiiodataController extends Controller
 
         return redirect()->route('kontak');
     }
+    public function delete(Request $request, $id)
+    {
+        $biodata = biodata::find($id);
+        $biodata->delete();
+
+        return redirect()->route('dataPendaftar');
+    }
 }

@@ -34,6 +34,7 @@ Route::get('/isiDataDiri', function () {
     return view('isiDataDiri');
 })->middleware(['auth', 'verified'])->name('isiDataDiri');
 Route::post('/datadiricreate', [App\Http\Controllers\BiiodataController::class, 'create'])->name('biodata.create');
+Route::delete('/dataPendaftar/{id}', [App\Http\Controllers\BiiodataController::class, 'delete'])->name('biodata.delete');
 Route::get('/admin', function () {
     return view('dashboardadmin');
 })->middleware(['auth', 'verified'])->name('dashboardadmin');
