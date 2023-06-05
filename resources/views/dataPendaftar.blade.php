@@ -1,6 +1,7 @@
 <x-admin-layout>
     <?php
     $data = DB::table('users')->get();
+    $data2 = DB::table('biodata')->get();
     ?>
 
     <br>
@@ -23,7 +24,7 @@
             <tr>
                 <td>{{ $item->id }}</td>
                 <td>{{ $item->name }}</td>
-                <td>{{ $item->id }}</td>
+                <td> </td>
                 <td>{{ $item->nameortu }}</td>
                 <td>{{ $item->phone }}</td>
                 <td>
