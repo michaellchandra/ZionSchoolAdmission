@@ -35,9 +35,12 @@
                 <td>{{ $data[$i]->nameortu }}</td>
                 <td>{{ $data[$i]->phone }}</td>
                 <td>
-                    <button class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded" onclick="showDetails({{ $data[$i]->id }})">
-                        Details
-                    </button>
+
+                    <a href="{{ route('siswaDetails', ['itemId' => $i]) }}">
+                        <button class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded">
+                            Details
+                        </button>
+                    </a>
 
                     <button class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded">
                         Edit
