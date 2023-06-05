@@ -2,6 +2,7 @@
     <?php
     $data = DB::table('users')->get();
     $data2 = DB::table('biodata')->get();
+    $length = count($data);
     ?>
 
     <br>
@@ -20,7 +21,25 @@
             </tr>
         </thead>
         <tbody>
-            @foreach ($data as $item)
+            @for ($i = 0; $i < $length; $i++)
+            <tr>
+                <td>{{ $data[$i]->id }}</td>
+                <td>{{ $data[$i]->name }}</td>
+                <td>{{ $data2[$i]->jenisKelamin }} </td>
+                <td>{{ $data[$i]->nameortu }}</td>
+                <td>{{ $data[$i]->phone }}</td>
+                <td>
+                    <button class="bg-sidebar hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
+                        Edit
+                    </button>
+                    <button class="bg-red-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
+                        Delete
+                    </button>
+                </td>
+            </tr>
+            @endfor
+
+            {{-- @foreach ($data as $item)
             <tr>
                 <td>{{ $item->id }}</td>
                 <td>{{ $item->name }}</td>
@@ -36,7 +55,7 @@
                     </button>
                 </td>
             </tr>
-            @endforeach
+            @endforeach --}}
             {{-- <tr>
                 <td>1</td>
                 <td>Michael Chandra</td>

@@ -17,7 +17,7 @@ class BiodataSeeders extends Seeder
     {
         DB::table('biodata')->insert([
             [
-                'userID' => 0,
+                'userID' => 1,
                 'namaLengkap' => 'Admin',
                 'jenisKelamin' => 'Laki-laki',
                 'alamatSiswa' => 'Jalan ABC No. 123',
