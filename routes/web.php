@@ -27,6 +27,9 @@ Route::get('/kontak', function () {
 Route::get('/informasi', function () {
     return view('informasi');
 })->middleware(['auth', 'verified'])->name('informasi');
+Route::get('/siswaDetails', function () {
+    return view('siswaDetails');
+})->middleware(['auth', 'verified'])->name('siswaDetails');
 Route::get('/isiDataDiri', function () {
     return view('isiDataDiri');
 })->middleware(['auth', 'verified'])->name('isiDataDiri');

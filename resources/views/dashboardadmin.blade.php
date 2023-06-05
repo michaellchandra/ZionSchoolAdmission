@@ -15,7 +15,7 @@
     @endfor
 
     <br>
-    <p>Jumlah pendaftar saat ini : {{ $i }}</p>
+    <p>Jumlah pendaftar saat ini : {{ $i - 1 }}</p>
 
 
 
