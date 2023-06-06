@@ -1,6 +1,6 @@
 <x-admin-layout>
     <?php
-    $data = DB::table('users')->get();
+    // $data = DB::table('users')->get();
     $data2 = DB::table('biodata')->get();
     $length = count($data2);
     ?>
@@ -21,7 +21,7 @@
                 <th>No.</th>
                 <th>Nama Calon Siswa</th>
                 <th>Jenis Kelamin</th>
-                <th>Nama Orang Tua</th>
+                {{-- <th>Nama Orang Tua</th> --}}
                 <th>Nomor HP</th>
                 <th>Action</th>
             </tr>
@@ -32,11 +32,11 @@
             @else
             @for ($i = 0; $i < $length; $i++)
             <tr>
-                <td>{{ $data[$i]->id }}</td>
-                <td>{{ $data[$i]->name }}</td>
+                <td>{{ $data2[$i]->userID }}</td>
+                <td>{{ $data2[$i]->namaLengkap }}</td>
                 <td>{{ $data2[$i]->jenisKelamin }} </td>
-                <td>{{ $data[$i]->nameortu }}</td>
-                <td>{{ $data[$i]->phone }}</td>
+                {{-- <td>{{ $data2[$i]->namaIbuKandung }}</td> --}}
+                <td>{{ $data2[$i]->nomorTeleponHandphoneWhatsapp }}</td>
                 <td>
                     {{-- DETAILS --}}
                     <a href="{{ route('siswaDetails', ['itemId' => $i]) }}">

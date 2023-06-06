@@ -3,7 +3,7 @@
     <h1 class="text-black text-4xl font-black"> Pembayaran Formulir </h1>
 
     <?php
-    $data = DB::table('users')->get();
+    $data = DB::table('biodata')->get();
     ?>
 
     {{-- @foreach ($data as $item)
@@ -17,8 +17,8 @@
             <tr>
                 <th>No.</th>
                 <th>Nama Calon Siswa</th>
-                <th>Email</th>
-                <th>Nama Orang Tua</th>
+                {{-- <th>Email</th> --}}
+                {{-- <th>Nama Orang Tua</th> --}}
                 <th>Bukti Pembayaran</th>
                 <th>Action</th>
             </tr>
@@ -26,10 +26,10 @@
         <tbody>
             @foreach ($data as $item)
                 <tr>
-                    <td>{{ $item->id }}</td>
-                    <td>{{ $item->name }}</td>
-                    <td>{{ $item->email }}</td>
-                    <td>{{ $item->nameortu }}</td>
+                    <td>{{ $item->userID }}</td>
+                    <td>{{ $item->namaLengkap }}</td>
+                    {{-- <td>{{ $item->email }}</td> --}}
+                    {{-- <td>{{ $item->nameortu }}</td> --}}
                     <td>bukti.pdf</td>
                     <td>
                         <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
