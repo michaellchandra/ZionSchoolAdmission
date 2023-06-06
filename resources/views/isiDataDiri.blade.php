@@ -174,7 +174,7 @@
                             <div class="w-5/6">
                                 <select id="jenisTinggal" name="jenisTinggal" class="form-select block w-full mt-4 text-lg font-regular text-white bg-blue-900" required autofocus>
                                 <option value="">Select an option</option>
-                                <option value="orangtua">Bersama Orang Tau</option>
+                                <option value="orangtua">Bersama Orang Tua</option>
                                 <option value="wali">Wali</option>
                                 <option value="kost">Kost</option>
                                 <option value="asrama">Asrama</option>
@@ -342,7 +342,7 @@
                             </div>
                             <div class="w-5/6">
                                 <x-text-input id="namaIbuKandung" class="block mt-1 w-full" type="text" name="namaIbuKandung"
-                                    :value="old('namaIbuKandung')" required autofocus autocomplete="namaIbuKandung" />
+                                    :value="old('namaIbuKandung')"  autofocus autocomplete="namaIbuKandung" />
                                 <x-input-error :messages="$errors->get('namaIbuKandung')" class="mt-2" />
                             </div>
                         </div>
@@ -354,7 +354,7 @@
                             </div>
                             <div class="w-5/6">
                                 <x-text-input id="pekerjaanIbu" class="block mt-1 w-full" type="text" name="pekerjaanIbu"
-                                :value="old('pekerjaanIbu')" required autofocus autocomplete="pekerjaanIbu" />
+                                :value="old('pekerjaanIbu')"  autofocus autocomplete="pekerjaanIbu" />
                                 <x-input-error :messages="$errors->get('pekerjaanIbu')" class="mt-2" />
                             </div>
                         </div>
@@ -366,7 +366,7 @@
                             </div>
                             <div class="w-5/6">
                                 <x-text-input id="penghasilanBulananIbu" class="block mt-1 w-full" type="number" name="penghasilanBulananIbu"
-                                :value="old('penghasilanBulananIbu')" required autofocus autocomplete="penghasilanBulananIbu" />
+                                :value="old('penghasilanBulananIbu')"  autofocus autocomplete="penghasilanBulananIbu" />
                                 <x-input-error :messages="$errors->get('penghasilanBulananIbu')" class="mt-2" />
                             </div>
                         </div>
@@ -378,7 +378,7 @@
                             </div>
                             <div class="w-5/6">
                                 <x-text-input id="nomorTeleponHandphoneWhatsappIbu" class="block mt-1 w-full" type="number" name="nomorTeleponHandphoneWhatsappIbu"
-                                :value="old('nomorTeleponHandphoneWhatsappIbu')" required autofocus autocomplete="nomorTeleponHandphoneWhatsappIbu" />
+                                :value="old('nomorTeleponHandphoneWhatsappIbu')"  autofocus autocomplete="nomorTeleponHandphoneWhatsappIbu" />
                                 <x-input-error :messages="$errors->get('nomorTeleponHandphoneWhatsappIbu')" class="mt-2" />
                             </div>
                         </div>
@@ -394,7 +394,7 @@
                             </div>
                             <div class="w-5/6">
                                 <x-text-input id="namaAyahKandung" class="block mt-1 w-full" type="text" name="namaAyahKandung"
-                                    :value="old('namaAyahKandung')" required autofocus autocomplete="namaAyahKandung" />
+                                    :value="old('namaAyahKandung')"  autofocus autocomplete="namaAyahKandung" />
                                 <x-input-error :messages="$errors->get('namaAyahKandung')" class="mt-2" />
                             </div>
                         </div>
@@ -406,7 +406,7 @@
                             </div>
                             <div class="w-5/6">
                                 <x-text-input id="pekerjaanAyah" class="block mt-1 w-full" type="text" name="pekerjaanAyah"
-                                :value="old('pekerjaanAyah')" required autofocus autocomplete="pekerjaanAyah" />
+                                :value="old('pekerjaanAyah')"  autofocus autocomplete="pekerjaanAyah" />
                                 <x-input-error :messages="$errors->get('pekerjaanAyah')" class="mt-2" />
                             </div>
                         </div>
@@ -418,7 +418,7 @@
                             </div>
                             <div class="w-5/6">
                                 <x-text-input id="penghasilanBulananAyah" class="block mt-1 w-full" type="number" name="penghasilanBulananAyah"
-                                :value="old('penghasilanBulananAyah')" required autofocus autocomplete="penghasilanBulananAyah" />
+                                :value="old('penghasilanBulananAyah')"  autofocus autocomplete="penghasilanBulananAyah" />
                                 <x-input-error :messages="$errors->get('penghasilanBulananAyah')" class="mt-2" />
                             </div>
                         </div>
@@ -430,7 +430,7 @@
                             </div>
                             <div class="w-5/6">
                                 <x-text-input id="nomorTeleponHandphoneWhatsappAyah" class="block mt-1 w-full" type="number" name="nomorTeleponHandphoneWhatsappAyah"
-                                :value="old('nomorTeleponHandphoneWhatsappAyah')" required autofocus autocomplete="nomorTeleponHandphoneWhatsappAyah" />
+                                :value="old('nomorTeleponHandphoneWhatsappAyah')"  autofocus autocomplete="nomorTeleponHandphoneWhatsappAyah" />
                                 <x-input-error :messages="$errors->get('nomorTeleponHandphoneWhatsappAyah')" class="mt-2" />
                             </div>
                         </div>
@@ -446,7 +446,7 @@
                             </div>
                             <div class="w-5/6">
                                 <x-text-input id="namaWali" class="block mt-1 w-full" type="text" name="namaWali"
-                                    :value="old('namaWali')" required autofocus autocomplete="namaWali" />
+                                    :value="old('namaWali')"  autofocus autocomplete="namaWali" />
                                 <x-input-error :messages="$errors->get('namaWali')" class="mt-2" />
                             </div>
                         </div>
@@ -458,7 +458,7 @@
                             </div>
                             <div class="w-5/6">
                                 <x-text-input id="pekerjaanWali" class="block mt-1 w-full" type="text" name="pekerjaanWali"
-                                :value="old('pekerjaanWali')" required autofocus autocomplete="pekerjaanWali" />
+                                :value="old('pekerjaanWali')"  autofocus autocomplete="pekerjaanWali" />
                                 <x-input-error :messages="$errors->get('pekerjaanWali')" class="mt-2" />
                             </div>
                         </div>
@@ -470,7 +470,7 @@
                             </div>
                             <div class="w-5/6">
                                 <x-text-input id="penghasilanBulananWali" class="block mt-1 w-full" type="number" name="penghasilanBulananWali"
-                                :value="old('penghasilanBulananWali')" required autofocus autocomplete="penghasilanBulananWali" />
+                                :value="old('penghasilanBulananWali')"  autofocus autocomplete="penghasilanBulananWali" />
                                 <x-input-error :messages="$errors->get('penghasilanBulananWali')" class="mt-2" />
                             </div>
                         </div>
@@ -482,7 +482,7 @@
                             </div>
                             <div class="w-5/6">
                                 <x-text-input id="nomorTeleponHandphoneWhatsappWali" class="block mt-1 w-full" type="number" name="nomorTeleponHandphoneWhatsappWali"
-                                :value="old('nomorTeleponHandphoneWhatsappWali')" required autofocus autocomplete="nomorTeleponHandphoneWhatsappWali" />
+                                :value="old('nomorTeleponHandphoneWhatsappWali')"  autofocus autocomplete="nomorTeleponHandphoneWhatsappWali" />
                                 <x-input-error :messages="$errors->get('nomorTeleponHandphoneWhatsappWali')" class="mt-2" />
                             </div>
                         </div>
@@ -536,7 +536,7 @@
                             </div>
                             <div class="w-5/6">
                                 <x-text-input id="ktpIbuKandung" class="block mt-1" type="file" name="ktpIbuKandung"
-                                :value="old('ktpIbuKandung')" required autocomplete="ktpIbuKandung" />
+                                :value="old('ktpIbuKandung')"  autocomplete="ktpIbuKandung" />
                                 <x-input-error :messages="$errors->get('ktpIbuKandung')" class="mt-2" />
                             </div>
                         </div>

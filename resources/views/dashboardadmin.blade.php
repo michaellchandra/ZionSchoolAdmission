@@ -4,7 +4,7 @@
     </x-slot>
 
     <?php
-        $data = DB::table('users')->get();
+        $data = DB::table('biodata')->get();
         $length = count($data);
     ?>
 
@@ -15,6 +15,6 @@
     @endfor
 
     <br>
-    <p>Jumlah pendaftar saat ini : {{ $i - 1 }}</p>
+    <p>Jumlah pendaftar saat ini : {{ $i }}</p>
 
 </x-admin-layout>

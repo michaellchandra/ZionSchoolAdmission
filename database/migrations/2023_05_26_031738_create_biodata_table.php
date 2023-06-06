@@ -39,15 +39,15 @@ return new class extends Migration
             $table->string('kabupatenKotaSekolahAsal');
             $table->string('kecamatanSekolahAsal');
             //Biodata Ibu Kandung
-            $table->string('namaIbuKandung');
-            $table->string('pekerjaanIbu');
-            $table->string('penghasilanBulananIbu');
-            $table->bigInteger('nomorTeleponHandphoneWhatsappIbu');
+            $table->string('namaIbuKandung')->nullable();
+            $table->string('pekerjaanIbu')->nullable();
+            $table->string('penghasilanBulananIbu')->nullable();
+            $table->bigInteger('nomorTeleponHandphoneWhatsappIbu')->nullable();
             //Biodata Ayah Kandung
-            $table->string('namaAyahKandung');
-            $table->string('pekerjaanAyah');
-            $table->string('penghasilanBulananAyah');
-            $table->bigInteger('nomorTeleponHandphoneWhatsappAyah');
+            $table->string('namaAyahKandung')->nullable();
+            $table->string('pekerjaanAyah')->nullable();
+            $table->string('penghasilanBulananAyah')->nullable();
+            $table->bigInteger('nomorTeleponHandphoneWhatsappAyah')->nullable();
             //Biodata Wali
             $table->string('namaWali')->nullable();
             $table->string('pekerjaanWali')->nullable();
@@ -57,14 +57,14 @@ return new class extends Migration
             //Lampiran Dokumen Pribadi(Dalama bentuk Foto)
             $table->string('aktaKelahiran');
             $table->string('kartuKeluarga');
-            $table->string('ktpAyahKandung');
-            $table->string('ktpIbuKandung');
-            $table->string('ktpWali');
+            $table->string('ktpAyahKandung')->nullable();
+            $table->string('ktpIbuKandung')->nullable();
+            $table->string('ktpWali')->nullable();
             $table->string('kartuAnggota');
             //Lampiran Dokumen Administrasi(Dalam bentuk Foto)
             $table->string('scanRaportVIII');
-            $table->string('suratRanking');
-            $table->string('sertifLomba');
+            $table->string('suratRanking')->nullable();
+            $table->string('sertifLomba')->nullable();
             $table->timestamps();
         });
     }
